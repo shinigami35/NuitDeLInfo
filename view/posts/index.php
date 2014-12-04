@@ -1,0 +1,16 @@
+<h1><span style="color: #2b6ed3;">&Eacute;vasion Paradisiaque, votre institut de soins du corps &agrave; Rennes</span></h1>
+<p style="text-align: justify;"><span style="color: #333333; font-family: Calibri; font-size: medium;"><strong>&Eacute;vasion Paradisiaque</strong>&nbsp;est un salon situ&eacute; &agrave; Rennes et sp&eacute;cialis&eacute; dans les massages,&nbsp;la relaxation et la beaut&eacute; du visage et du corps. Parce que le corps est le reflet&nbsp;de l'&acirc;me,&nbsp;il est tr&egrave;s important d'en prendre soin.</span></p>
+<p><span style="font-size: medium;"><img style="float: right;" src="../../../img/2014-09/test.jpg" alt="" width="204" height="258" /></span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #333333; font-family: Calibri; font-size: medium;"><strong>&Eacute;vasion Paradisiaque</strong>&nbsp;vous accueille dans&nbsp;</span><span style="color: #333333; font-family: Calibri; font-size: medium;">&nbsp;un cadre idyllique,&nbsp;</span><span style="color: #333333; font-family: Calibri; font-size: medium;">propre &agrave; la d&eacute;tente et &agrave; la relaxation, le tout pour votre bien-&ecirc;tre.&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: medium;"><span style="color: #333333; font-family: Calibri;"><br /></span><span style="color: #333333; font-family: Calibri;">Dipl&ocirc;m&eacute;e d'&Eacute;tat (BTS Esth&eacute;tique-Cosm&eacute;tique), Je mets mes comp&eacute;tences au service&nbsp;</span></span><span style="font-size: medium;"><span style="color: #333333; font-family: Calibri;">de votre beaut&eacute;&nbsp;</span></span><span style="font-size: medium;"><span style="color: #333333; font-family: Calibri;">et de votre bien-&ecirc;tre. Des massages et des soins, mais aussi des conseils personnalis&eacute;s et un suivi des r&eacute;sultats.&nbsp;</span></span></p>
+<p style="text-align: justify;"><span style="color: #333333; font-family: Calibri; font-size: medium;"><br />D&eacute;couvrez les diff&eacute;rentes prestations propos&eacute;es par &Eacute;vasion Paradisiaque :</span></p>
+<ul>
+<li style="text-align: justify;"><span style="text-decoration: underline;"><span style="font-size: medium;">Massage Relaxant</span></span></li>
+<li style="text-align: justify;"><span style="text-decoration: underline;"><span style="font-size: medium;">Soin Visage et Corps</span></span></li>
+<li style="text-align: justify;"><span style="text-decoration: underline;"><span style="font-size: medium;">Epilation</span></span></li>
+<li style="text-align: justify;"><span style="text-decoration: underline;"><span style="font-size: medium;">Massage et Sophrologie</span></span></li>
+</ul>
+<p style="text-align: right;"><strong style="font-size: x-large;">T&eacute;l : 06 42 93 71 05</strong></p>
+<p style="text-align: right;">&nbsp;</p>
+<p><span style="color: #333333; font-family: Calibri; font-size: medium;">Le salon est ouvert du lundi au vendredi de 10h &agrave; 18h30. N'h&eacute;sitez pas &agrave; me contacter pour de plus amples informations !</span></p>

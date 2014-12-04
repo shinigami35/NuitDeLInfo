@@ -1,0 +1,10 @@
+body {
+	font-size:100%
+}
+/* Headers */
+h1 {
+	font-size:6.2em;font-weight:500;
+}
+#margebody{
+	margin-top: 25px;
+}
