@@ -14,6 +14,7 @@
 				<li><a href="<?php echo Router::url('admin/categories/index'); ?>">Catégories</a></li>
 				<li><a href="<?php echo Router::url('admin/pages/index'); ?>">Pages</a></li>
 				<li><a href="<?php echo Router::url('admin/users/index'); ?>">Liste Membre</a></li>
+				<li><a href="<?php echo Router::url('admin/people/index'); ?>">Liste Membre</a></li>
 				<li><a href="<?php echo Router::url(); ?>">Voir le site</a></li>
 				<li><a href="<?php echo Router::url('users/logout'); ?>">Se déconnecter</a></li>
 			</ul>

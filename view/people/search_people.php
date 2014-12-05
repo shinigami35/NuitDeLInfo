@@ -1,3 +1,6 @@
+
+<br>
+<h4>Résultats</h4>
 <br>
 <table class="table table-bordered table-striped table-condensed">
 	<thead>

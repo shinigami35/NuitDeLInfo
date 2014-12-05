@@ -28,7 +28,21 @@ class PeopleController extends Controller{
 			$this->set($d);
 		} else {
 			$this->Session->setFlash('Merci de corriger vos informations','error');
-			//$this->redirect('people/index');
+			$this->redirect('people/index');
+		}
+	}
+	function admin_search(){
+		$this->loadModel('People');
+		if($this->request->data){
+			$data = $this->request->data;
+			$condition = array('Nom'=> $data->nom, 'Prénom' => $data->prenom);
+			$d['people'] = $this->People->find(array(
+				'conditions'     => $condition
+				));
+			$this->set($d);
+		} else {
+			$this->Session->setFlash('Merci de corriger vos informations','error');
+			$this->redirect('admin/people/index');
 		}
 	}
 
@@ -41,50 +55,12 @@ class PeopleController extends Controller{
 		$this->loadModel('People');
 		$condition = array('online'=>'1'); 
 		$d['people'] = $this->People->find(array(
-			'fields'     => 'Nom, Prénom, Age, Date, Pays, Sexe, Ville, Commentaire',
+			'fields'     => 'id, Nom, Prénom, Age, Date, Pays, Sexe, Ville, Commentaire',
 			'condition'  => $condition,
 			'limit'      => ($perPage*($this->request->page-1)).','.$perPage
 			));
 		$d['total'] = $this->People->findCount($condition); 
 		$d['page'] = ceil($d['total'] / $perPage);
-		$this->set($d);
-	}
-
-	/**
-	* Permet d'éditer un article
-	**/
-	function admin_edit($id = null){
-		$this->loadModel('People'); 
-		if($id === null){
-			$people = $this->People->findFirst(array(
-				'conditions' => array('online' => -1),
-				));
-			if(!empty($people)){
-				$id = $people->id;
-			}else{
-				$this->People->save(array(
-					'online' => -1,
-					));
-				$id = $this->People->id;
-			} 
-		}
-		$d['id'] = $id; 
-		if($this->request->data){
-			if($this->People->validates($this->request->data)){
-				$this->request->data->type = 'people';
-
-				$this->People->save($this->request->data);
-				$this->Session->setFlash('Le contenu a bien été modifié'); 
-				$this->redirect('admin/pages/index'); 
-			}else{
-				$this->Session->setFlash('Merci de corriger vos informations','error'); 
-			}
-			
-		}else{
-			$this->request->data = $this->People->findFirst(array(
-				'conditions' => array('id'=>$id)
-				));
-		}
 		$this->set($d);
 	}
 
@@ -95,7 +71,7 @@ class PeopleController extends Controller{
 		$this->loadModel('People');
 		$this->People->delete($id);
 		$this->Session->setFlash('Le contenu a bien été supprimé'); 
-		$this->redirect('admin/pages/index'); 
+		$this->redirect('admin/people/index'); 
 	}
 
 }
