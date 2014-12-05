@@ -15,6 +15,28 @@ class PeopleController extends Controller{
 		$d['page'] = ceil($d['total'] / $perPage);
 		$this->set($d);
 	}
+
+
+	function search_people(){
+		$this->loadModel('People'); 
+		if($this->request->data){
+			$data = $this->request->data;
+			if($this->People->validates($this->request->data)){
+
+				$this->People->save($this->request->data);
+				$this->Session->setFlash('Le contenu a bien été modifié'); 
+				$this->redirect('people/index'); 
+			}else{
+				$this->Session->setFlash('Merci de corriger vos informations','error'); 
+			}
+			
+		}else{
+			$this->request->data = $this->People->findFirst(array(
+				'conditions' => array('id'=>$id)
+				));
+		}
+		$this->set($d);
+	}
 	
 	/**
 	* Liste les différents articles

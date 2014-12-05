@@ -5,6 +5,7 @@
 <div>
 	<h4>Nombre de personnes dans le camp : <?php echo $total; ?> personnes</h4>
 </div>
+<a href="<?php echo Router::url('people/search'); ?>"></a>
 <hr>
 <table class="table table-bordered table-striped table-condensed">
 	<thead>
