@@ -1,5 +1,5 @@
 <div class="span8">
-	<h1>Liste des utilisateurs</h1>
+	<h3>Liste des utilisateurs</h3>
 	
 
 	<table class="table table-bordered table-striped table-condensed">
