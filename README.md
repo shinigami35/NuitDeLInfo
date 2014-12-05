@@ -13,7 +13,7 @@ meilleur gestion du site.
 Le backend permet d'écrire des articles ou des pages à l'aide de TinyMC (utilisé sur Wordpress)
 ce qui donne une utilisation simple du site.
 
-On peut consulter les noms des personnes dans un camp, afin de rechercher une personnes qui aurait fui
+On peut consulter les noms des personnes dans un camp de réfugiés, afin de rechercher une personnes qui aurait fui la
 Syrie.
 
 Le site est disponible à l'adresse shini.alwaysdata.net et le backend est protégé par un mot de passe.
