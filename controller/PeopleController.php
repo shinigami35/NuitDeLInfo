@@ -18,31 +18,26 @@ class PeopleController extends Controller{
 
 
 	function search_people(){
-		$this->loadModel('People'); 
+		$this->loadModel('People');
 		if($this->request->data){
 			$data = $this->request->data;
-			if($this->People->validates($this->request->data)){
-
-				$this->People->save($this->request->data);
-				$this->Session->setFlash('Le contenu a bien été modifié'); 
-				$this->redirect('people/index'); 
-			}else{
-				$this->Session->setFlash('Merci de corriger vos informations','error'); 
-			}
-			
-		}else{
-			$this->request->data = $this->People->findFirst(array(
-				'conditions' => array('id'=>$id)
+			$condition = array('Nom'=> $data->nom, 'Prénom' => $data->prenom);
+			$d['people'] = $this->People->find(array(
+				'conditions'     => $condition
 				));
+			$this->set($d);
+		} else {
+			$this->Session->setFlash('Merci de corriger vos informations','error');
+			//$this->redirect('people/index');
 		}
-		$this->set($d);
 	}
-	
+
+
 	/**
 	* Liste les différents articles
 	**/
 	function admin_index(){
-		$perPage = 200; 
+		$perPage = 200;
 		$this->loadModel('People');
 		$condition = array('online'=>'1'); 
 		$d['people'] = $this->People->find(array(

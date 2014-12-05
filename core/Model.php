@@ -122,7 +122,6 @@ class Model{
 			}
 
 		}
-
 		if(isset($req['order'])){
 			$sql .= ' ORDER BY '.$req['order'];
 		}

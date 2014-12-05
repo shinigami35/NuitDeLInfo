@@ -23,7 +23,7 @@ class Form{
 		if($label == 'hidden'){
 			return '<input type="hidden" name="'.$name.'" value="'.$value.'">'; 
 		}
-		$html = '<div><label azeaeae  for="input'.$name.'">'.$label.'</label></div>';
+		$html = '<div class="large-4 columns"><label for="input'.$name.'">'.$label.'</label>';
 		$attr = ' '; 
 		foreach($options as $k=>$v)
 		{ 
@@ -33,24 +33,24 @@ class Form{
 			}
 		}
 		if(!isset($options['type']) && !isset($options['options'])){
-			$html .= '<input type="text" id="input'.$name.'" name="'.$name.'" value="'.$value.'"'.$attr.'>';
+			$html .= '<input type="text" id="input'.$name.'" name="'.$name.'" value="'.$value.'"'.$attr.'></div>';
 		}elseif(isset($options['options'])){
 			$html .= '<select id="input'.$name.'" name="'.$name.'">';
 			foreach($options['options'] as $k=>$v){
-				$html .= '<option value="'.$k.'" '.($k==$value?'selected':'').'>'.$v.'</option>'; 
+				$html .= '<option value="'.$k.'" '.($k==$value?'selected':'').'>'.$v.'</option></div>'; 
 			}
 			$html .= '</select>'; 
 		}elseif($options['type'] == 'textarea'){
-			$html .= '<textarea " id="input'.$name.'" name="'.$name.'"'.$attr.'>'.$value.'</textarea>';
+			$html .= '<textarea " id="input'.$name.'" name="'.$name.'"'.$attr.'>'.$value.'</textarea></div>';
 		}elseif($options['type'] == 'checkbox'){
-			$html .= '<input type="hidden" name="'.$name.'" value="0"><input type="checkbox" name="'.$name.'" value="1" '.(empty($value)?'':'checked').'>'; 
+			$html .= '<input type="hidden" name="'.$name.'" value="0"><input type="checkbox" name="'.$name.'" value="1" '.(empty($value)?'':'checked').'></div>'; 
 		}elseif($options['type'] == 'file'){
-			$html .= '<input type="file" class="input-file" id="input'.$name.'" name="'.$name.'"'.$attr.'>';
+			$html .= '<input type="file" class="input-file" id="input'.$name.'" name="'.$name.'"'.$attr.'></div>';
 		}elseif($options['type'] == 'password'){
-			$html .= '<input type="password" id="input'.$name.'" name="'.$name.'" value="'.$value.'"'.$attr.'>';
+			$html .= '<input type="password" id="input'.$name.'" name="'.$name.'" value="'.$value.'"'.$attr.'></div>';
 		}
 		if($error){
-			$html .= '<span class="error">'.$error.'</span>';
+			$html .= '<span class="error">'.$error.'</span></div>';
 		}
 		return $html; 
 	}
