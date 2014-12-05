@@ -69,8 +69,6 @@ class PeopleController extends Controller{
 			$this->loadModel('People');
 			if($this->People->validates($this->request->data)){
 				
-				$this->request->data->online = 1;
-				$this->request->data->type = 'people';
 				$this->People->save($this->request->data);
 				$this->Session->setFlash('Ajouter avec succès','success');
 				$this->redirect('admin/people/index');

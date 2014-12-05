@@ -1,5 +1,5 @@
 <div>
-	<h1>Le blog</h1>
+	<h2>Help Syrie</h2>
 </div>
 
 <?php foreach ($posts as $k => $v): ?>

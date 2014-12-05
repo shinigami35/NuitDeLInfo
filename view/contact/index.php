@@ -26,7 +26,7 @@
 			<span class="error-message"></span><br/>
 
 
-			<input class="myButton" id="envoyer" type="submit" class="btn primary" value="Envoyer">
+			<input class="myButton" id="envoyer" type="submit" class="button [tiny small large]" value="Envoyer">
 		</form>
 	</div>
 
