@@ -18,14 +18,6 @@
 <body>
 	<!-- Header -->
 	<nav class="top-bar" data-topbar="" style="">
-		<ul class="title-area">
-
-			<li class="name">
-				<h1>
-					Help the Syrie
-				</h1>
-			</li>
-		</ul>
 		<!-- Menu -->
 		<section class="top-bar-section">
 			<ul class="right">

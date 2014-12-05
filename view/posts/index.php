@@ -1,7 +1,8 @@
 <div>
 	<h2>Help Syrie</h2>
 </div>
-
+<br>
+<br>
 <?php foreach ($posts as $k => $v): ?>
 	<h2><?php echo $v->name; ?></h2>
 	<?php echo $v->content; ?>
