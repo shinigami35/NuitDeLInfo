@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>Mon livre d'or</title>
+	<title>Administration</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo Router::webroot('css/bootstrap.min.css'); ?>">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -40,13 +40,15 @@
 </div>
 
 </body>
-<script type="text/javascript"
-src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script type="text/javascript"
-src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script type="text/javascript"
 src="<?php echo Router::webroot('js/datepicker-fr.js'); ?>"></script>
-
+<script>
+$(function() {
+	$( "#datepicker" ).datepicker();
+});
+</script>
 <script type="text/javascript">
 $(function(){
 	$.datepicker.setDefaults( $.datepicker.regional['fr'] ); 

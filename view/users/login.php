@@ -1,5 +1,5 @@
 
-<h2>Connexion</h2>
+<h2>Connexion des membres/staff</h2>
 
 <form action="<?php echo Router::url('users/login'); ?>" method="post" data-abide>
 	<?php echo $this->Form->input('login','Identifiant'); ?>

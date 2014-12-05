@@ -6,9 +6,9 @@ class Conf{
 	static $databases = array(
 
 		'default' => array(			
-			'host' => '127.0.0.1',
-			'database' => 'nuit',
-			'login' => 'adrien',
+			'host' => 'mysql1.alwaysdata.com',
+			'database' => 'shini_shini',
+			'login' => 'shini_shini',
 			'password' => 'adrien',
 		)	
 	);

@@ -7,7 +7,7 @@
 		<br/>
 		<br/>
 		<br/>
-		<p>Vous pouvez me contacter par téléphone au <b>06 42 93 71 05</b> ou bien via ce formulaire ou bien par email à cette adresse : <b>evasionparadisiaque @ hotmail.fr</b> . Je vous informe que les prises de rendez-vous se font uniquement par téléphone et non par email ni sur place.</p>
+		<p>Vous pouvez nous contactez afin d'avoir plus d'explication quant à notre projet.</p>
 
 
 	</div>
@@ -16,13 +16,13 @@
 
 
 		<form action="<?php echo Router::url('contact/send'); ?>" onSubmit="return validate()" method="post">
-			<?php echo $this->Form->input('nom','Nom'); ?><br/>
+			<?php echo $this->Form->inputb('nom','Nom'); ?><br/>
 			<span class="error-message"></span>
 
-			<?php echo $this->Form->input('email','Email'); ?><br/>
+			<?php echo $this->Form->inputb('email','Email'); ?><br/>
 			<span class="error-message"></span>
 
-			<?php echo $this->Form->input('message','Message',array('type'=>'textarea')); ?><br/>
+			<?php echo $this->Form->inputb('message','Message',array('type'=>'textarea')); ?><br/>
 			<span class="error-message"></span><br/>
 
 

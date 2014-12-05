@@ -64,6 +64,29 @@ class PeopleController extends Controller{
 		$this->set($d);
 	}
 
+	function admin_add($id = null){
+		if($this->request->data){
+			$this->loadModel('People');
+			if($this->People->validates($this->request->data)){
+				
+				$this->request->data->online = 1;
+				$this->request->data->type = 'people';
+				$this->People->save($this->request->data);
+				$this->Session->setFlash('Ajouter avec succès','success');
+				$this->redirect('admin/people/index');
+
+			} else {
+				$this->Session->setFlash('L\'utilisateur existe déjà','error');
+			}
+
+		} 
+		else {
+			//$this->Session->setFlash('Merci de corriger vos informations','error');
+		}
+	}
+	
+
+
 	/**
 	* Permet de supprimer un article
 	**/

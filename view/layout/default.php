@@ -22,28 +22,19 @@
 
 			<li class="name">
 				<h1>
-					<a href="http://foundation.zurb.com/templates/realty.html#">
-						Top Bar Title
-					</a>
+					Help the Syrie
 				</h1>
 			</li>
-			<li class="toggle-topbar menu-icon"><a href="http://foundation.zurb.com/templates/realty.html#"><span>menu</span></a></li>
 		</ul>
 		<!-- Menu -->
 		<section class="top-bar-section">
 			<ul class="right">
 				<?php $pagesMenu = $this->request('Pages','getMenu'); ?>
 
-
-				<li><a href="<?php echo Router::url('page/index-36'); ?>">Accueil</a></li>
-				<li><a href="<?php echo Router::url('page/plan-1'); ?>">Plan d'accès</a></li>
-				<li><a href="<?php echo Router::url('guestbook/index'); ?>">Livre d'Or</a></li>
-				<li><a href="<?php echo Router::url('page/galerie-photos-2'); ?>">Galerie Photos</a></li>
-				<li><a href="<?php echo Router::url('page/liens-partenaires-42'); ?>">Liens Partenaires</a></li>
-				<li><a href="<?php echo Router::url('page/carte-cadeaux-5'); ?>">Carte Cadeau</a></li>
-				<li><a href="<?php echo Router::url('page/offres-48'); ?>">Offre</a></li>
+				<li><a href="<?php echo Router::url(); ?>">Accueil</a></li>
+				<li><a href="<?php echo Router::url('people/index'); ?>">Liste des personnes</a></li>
 				<li><a href="<?php echo Router::url('contact/index'); ?>">Contact</a></li>
-				<li><a href="<?php echo Router::url('people/index'); ?>">Contact</a></li>
+				
 				<?php if(!$this->Session->isLogged()){ ?>
 				<li><a href="<?php echo Router::url('users/login'); ?>">Connexion</a></li>
 				<?php }
@@ -56,21 +47,6 @@
 		</section>
 	</nav>
 	<!-- End header -->
-
-
-
-	<!-- Page 
-	<div class="row">
-		<div class="large-12 hide-for-small">
-			<div id="featured" data-orbit>
-				<img src="<?php //echo Router::webroot('img/test.jpg'); ?>" alt="slide 1" />
-				<img src="<?php// echo Router::webroot('img/test.jpg'); ?>" alt="slide 2" />
-				<img src="<?php //echo Router::webroot('img/test.jpg'); ?>" alt="slide 3" />
-			</div>
-		</div>
-	</div>-->
-
-	<!-- End Carrousel-->
 
 	<!-- Corps -->
 	<div class="row">
@@ -93,6 +69,7 @@
 	<!-- End Footer -->
 
 </body>
+
 <script>
 $(document).foundation();
 

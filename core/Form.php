@@ -68,7 +68,10 @@ class Form{
 		$attr = ' '; 
 
 		if(!isset($options['type']) && !isset($options['options'])){
-			$html .= '<input type="text" id="input'.$name.'" name="'.$name.'" value="'.$value.'"'.$attr.'>';
+			if($name == 'date')
+				$html .= '<input type="text" id="datepicker" name="'.$name.'" value="'.$value.'"'.$attr.'>';
+			else
+				$html .= '<input type="text" id="input'.$name.'" name="'.$name.'" value="'.$value.'"'.$attr.'>';
 		}elseif(isset($options['options'])){
 			$html .= '<select id="input'.$name.'" name="'.$name.'">';
 			foreach($options['options'] as $k=>$v){
